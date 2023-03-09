@@ -38,7 +38,6 @@ label {
     font-size: 14px;
     line-height: 18px;
     color: #777777;
-    padding-top: 24px;
 }
 
 select {
@@ -52,6 +51,13 @@ select {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
     display: block;
     cursor: pointer;
+    appearance: none;
+    outline: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #555555;
 }
 
 input {
@@ -65,6 +71,12 @@ input {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    outline: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #555555;
 }
 
 button {
@@ -76,14 +88,46 @@ button {
     font-size: 16px;
     line-height: 5px;
     color: #F4F4F4;
-    border: none;
     cursor: pointer;
+    border: none;
 }
 
 button:hover {
-    opacity: 0,7;
+    opacity: 0.7;
 }
 
-button:active {
-    opacity: 0,7;
+button:Active {
+    opacity: 0.5;
+}
+
+
+.imagens-bandeiras {
+    width: 327px;
+    height: 276px;
+    left: 24px;
+    top: 458px;
+    border: 1px solid #1B83E2;
+    border-radius: 4px;
+    margin-top: 36px;
+    padding-top: 12px;
+    text-align: center;
+}
+
+.paragrafo-imagens {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #777777;
+}
+
+.valor-bandeiras {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    color: #1B83E2;
+}
+
+.image-seta {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
