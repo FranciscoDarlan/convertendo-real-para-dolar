@@ -1,4 +1,7 @@
 const botao = document.getElementsByTagName ("button");
-const imput = document.getElementById ("value-dinheiro"); 
 
-console.log(botao.imput)
+const valor = Document.getElementsById ("value-dinheiro")
+
+const conversor = valor / 5.1
+
+console.log(botao.conversor)
