@@ -1,7 +1,4 @@
-const botao = document.getElementsByTagName ("button");
+const button = document.getElementsByTagName('button')
 
-const valor = Document.getElementsById ("value-dinheiro")
-
-const conversor = valor / 5.1
-
-console.log(botao.conversor)
+console.log(button)
+// button.addEventListenner("click");

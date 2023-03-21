@@ -1,3 +1,0 @@
-const butao = 
-
-console.log()
