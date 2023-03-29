@@ -1,13 +1,38 @@
-//primeira parte vamos fazer 1 coisa de cada vez .. vamos pegar o botão;
-
 const button = document.getElementById('button-convert') // aqui vou la html pegar meu botao pelo getElementById
 
-
-//const moedas = document.getElementById("moedas")
-//const optionDolar = document.getElementById("option-dolar")
-
 const dolar = 5.25 // preciso dar um valor 
-//const euro = 5.66 // valor euro
+const euro = 5.66 // valor euro
+
+trocaMoedas = () => {
+    const moedas = document.getElementById('moedas').value
+    const optionDolar = document.getElementById('option-dolar').value
+    const optionEuro = document.getElementById('option-euro').value
+
+    const paragrafoNomeMoeda = document.getElementById('paragrafo-dolar')
+
+    if (moedas === optionEuro ) {
+        (paragrafoNomeMoeda.innerHTML )= moedas
+    }
+
+    if (moedas === optionDolar) {
+        paragrafoNomeMoeda.innerHTML = moedas
+    }
+}
+
+/* {TENTANDO TROCAR AS BANDEIRAS}
+trocaBandeiras = () => {
+     const imgEua = document.getElementById('img-EUA')
+
+    const imgTroca = document.getElementById('paragrafo-dolar')
+
+    if (img === ) {
+        imgTroca.innerHTML = img
+    }
+
+    if (img === ) {
+        imgTroca.innerHTML = img
+    }
+}*/
 
 const convertValues = () => { //criei essa funçao com aero funtions pela setinha, todo vez que for clicado vai aparecer na tela
 
@@ -18,20 +43,13 @@ const convertValues = () => { //criei essa funçao com aero funtions pela setinh
     const trcaTextDolar = document.getElementById("text-dolar") // criando o caminho para mexer nesse elemento
 
     trocaTextReal.innerHTML = inputReais //.innnerHTML troca o texto na tela 
-    trcaTextDolar.innerHTML = inputReais / dolar //.innnerHTML troca o texto na tela
+    trcaTextDolar.innerHTML = inputReais / dolar //.innnerHTML troca o texto na tela ja com a conta feita
 
-    inputReais / dolar // conta que o JS vai converter o dinheiro
-
-    /*
-    if {moedas = optionDolar 
-        console.log(inputReais / dolar) // se quiser enxergar preciso colocar dentro do console.log
-    }else {
-     console.log(inputReais / euro)
-    }*/
+    // trocaTextDolar.innerHTML = new Intl.NumberFormat()
 
     //  console.log(inputReais)   // consigo enxerga o valor da minha variavel (input)
     //   console.log('cliqui no botao') // consigo enxergar na tela o que esta acontecendo 
-
 }
 
+moedas.addEventListener('change', trocaMoedas)
 button.addEventListener('click', convertValues) // ouvidor de eventos , preciso criar uma funçao antes que faça o que eu quero
