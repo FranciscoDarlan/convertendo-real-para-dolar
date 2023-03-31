@@ -20,6 +20,7 @@ trocaMoedas = () => {
 }
 
 /* {TENTANDO TROCAR AS BANDEIRAS}
+
 trocaBandeiras = () => {
      const imgEua = document.getElementById('img-EUA')
 
@@ -42,10 +43,18 @@ const convertValues = () => { //criei essa funçao com aero funtions pela setinh
     const trocaTextReal = document.getElementById("text-real") // criando o caminho para mexer nesse elemento
     const trcaTextDolar = document.getElementById("text-dolar") // criando o caminho para mexer nesse elemento
 
-    trocaTextReal.innerHTML = inputReais //.innnerHTML troca o texto na tela 
-    trcaTextDolar.innerHTML = inputReais / dolar //.innnerHTML troca o texto na tela ja com a conta feita
+    //trocaTextReal.innerHTML = inputReais --> innnerHTML troca o texto na tela 
 
-    // trocaTextDolar.innerHTML = new Intl.NumberFormat()
+        trocaTextReal.innerHTML = new Intl.NumberFormat('pt-BR',
+        {style: 'currency', currency: 'BRL'}
+        ).format(inputReais);
+        
+    
+    // trcaTextDolar.innerHTML = inputReais / dolar--> innnerHTML troca o texto na tela ja com a conta feita
+
+    trcaTextDolar.innerHTML = new Intl.NumberFormat('en-US',
+    {style: 'currency', currency: 'USD'}
+    ).format(inputReais / dolar);
 
     //  console.log(inputReais)   // consigo enxerga o valor da minha variavel (input)
     //   console.log('cliqui no botao') // consigo enxergar na tela o que esta acontecendo 
